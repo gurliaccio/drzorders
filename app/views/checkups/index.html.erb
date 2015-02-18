@@ -1,0 +1,11 @@
+<% provide(:title, 'Items Index') %>
+
+<h1>Recommendations for you:</h1>
+
+<ul>
+  <% @checkups["Result"]["Topics"].each do |topic| %>
+  <li><%= topic["Title"] %></li>
+  <% end %>
+</ul>
+
+<p><%= raw(@checkups["Result"]["Topics"]) %></p>

@@ -1,0 +1,17 @@
+<% provide(:title, @user.name) %>
+<div class="container-fluid">
+  <h2>Hello <%= @user.name %>, please enter your info below:</h2>
+  <br>
+    <form class="navbar-form" role="search" action="/checkups">
+      <div class="radio">
+        <label><input type="radio" name="gender" value="male">male</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="gender" value="female">female</label>
+      </div>
+      <div class="form-group"><input type="integer" name="age" value="<%= @age %>" class="form-control" placeholder="age">
+        <button type="submit" class="btn btn-success hvr-grow" onclick="window.location.href='/index'">submit</button>
+        <button type="reset"  class="btn btn-warning hvr-grow" onclick="window.location.href='/'">reset</button>
+      </div>
+    </form>
+</div>  
