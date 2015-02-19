@@ -13,13 +13,40 @@
  *= require_tree .
  *= require_self
  */
-h4 {
-  padding-left: 150px;
-}
 
 h2 {
-  padding-left: 15px;
+  font-family: 'Glyphicons Halflings';
+  padding-left: 150px;
+  padding-right: 150px;
 }
+
+h3 {
+  font-family: 'Glyphicons Halflings';
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+h4 {
+  font-family: 'Glyphicons Halflings';
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+h5 {
+  color: #3399FF;
+}
+
+p { 
+ font-family: 'Glyphicons Halflings';
+ font-size: 1.5em; 
+ padding-left: 150px;
+ padding-right: 150px;
+}
+
 .form-group {
   padding-left: 20px;
+}
+
+div.jumbotron {
+  max-height: 200px;
 }
