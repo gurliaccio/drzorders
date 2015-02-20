@@ -6,62 +6,38 @@ class CheckupsController < ApplicationController
   def index
     @gender = params[:gender]
     @age = params[:age]
-    @checkups = Checkup.search(@gender, @age)
-    puts "Checkups: #{@checkups}"
-  end
+    @checkups = Checkup.search(current_user, @gender, @age)
 
-  def show
-    @active = 'items'
-    @item = Item.find(params[:id].to_i)
-  end
+    # delete old checkup data for current_user
+    current_user.checkups.each do |checkup|
+      checkup.destroy
+    end
 
-  def new
-    @active = 'items'
-    @item   = Item.new
+    # save new checkup data for current_user
+    @checkups.each do |checkup|
+      checkup.save
+    end
+
+    
   end
 
   def create
-    @active = 'items'
-    @item = Item.new(item_params)
-    @item = current_user.items.new(item_params) 
-    
-    if @item.save
-      flash[:success] = "Item created."
-      redirect_to items_path
-    else
-      render 'new'
+    @active = 'checkups'
+    @checkup = Checkup.new(checkup_params)
+    @checkup = current_user.checkup.new(checkup_params) 
+    if @checkup.save
+    #flash[:success] = "List created."
+    redirect_to checkups_path
+  #   else
+  #     render 'new'
     end
   end
 
-  def edit
-    @active = 'items'
-  end
-
-  def update
-    if @item.update_attributes(item_params)
-      flash[:success] = "Item updated."
-      redirect_to item_path(@item.id)
-    else
-      render 'edit'
-    end
-  end
-
-  def destroy
-    @item.destroy
-    flash[:success] = "Item deleted."
-    redirect_to items_path
+  def checkup_params
+    params.require(:checkup).permit(:gender, :age)
   end
 
   private
-
-    def item_params
-      params.require(:item).permit(:name, :rating, :price,
-                                   :description, :image_file)
-    end
-
-    def set_item
-      @item = Item.find(params[:id])
-    end
 
     def correct_user
       unless current_user?(@item.user) || current_user.admin?

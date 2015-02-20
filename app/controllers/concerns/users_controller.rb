@@ -13,9 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Success!"
-      # redirect_to user_path(@user.id)
-      # This is the same thing as:
-      redirect_to user_path @user # more likely to see this in professional world
+      redirect_to user_path @user 
     else
       render 'new'
     end

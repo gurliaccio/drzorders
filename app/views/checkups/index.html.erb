@@ -1,11 +1,10 @@
 <% provide(:title, 'Items Index') %>
 
-<h1>Recommendations for you:</h1>
+<h3>I recommend:<br><br></h3>
 
-<ul>
-  <% @checkups["Result"]["Topics"].each do |topic| %>
-  <li><%= topic["MyHFDescription"] %></li>
-  <% end %>
-</ul>
+<% @checkups.each do |checkup| %>
+  <!-- <p><%= checkup.title %></p> -->
+  <p><%= checkup.description %></p>
+<% end %>
 
-<p><%= raw(@checkups["Result"]["Topics"]) %></p>
+<h6><br>*These recommendations actually don't come from Doctor Zorders (he struggled in med school and is today an amateur jazz dancer) but from the U.S. Preventive Services Task Force (USPSTF), the CDC Advisory Committee on Immunization Practices (ACIP), the Bright Futures Guidelines, and the Institute of Medicine’s (IOM) Committee on Preventive Services for Women. All are created by the Office of Disease Prevention and Health Promotion (ODPHP) in collaboration with the Agency for Healthcare Research and Quality (AHRQ). These folks know what they're talking about!</h6>

@@ -14,20 +14,24 @@
  *= require_self
  */
 
+h1 {
+  padding-left: 150px;
+}
+
 h2 {
-  font-family: 'Glyphicons Halflings';
+  /*font-family: 'Glyphicons Halflings';*/
   padding-left: 150px;
   padding-right: 150px;
 }
 
 h3 {
-  font-family: 'Glyphicons Halflings';
+  /*font-family: 'Glyphicons Halflings';*/
   padding-left: 150px;
   padding-right: 150px;
 }
 
 h4 {
-  font-family: 'Glyphicons Halflings';
+  /*font-family: 'Glyphicons Halflings';*/
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -36,17 +40,27 @@ h5 {
   color: #3399FF;
 }
 
+h6 {
+  color: blue;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 p { 
- font-family: 'Glyphicons Halflings';
- font-size: 1.5em; 
+ font-family: 'Raleway', sans-serif;
+ font-size: 1em; 
  padding-left: 150px;
  padding-right: 150px;
 }
 
 .form-group {
-  padding-left: 20px;
+  padding-left: 40px;
+}
+
+.navbar-form {
+  padding-left: 300px;
 }
 
 div.jumbotron {
-  max-height: 200px;
+  max-height: 250px;
 }
