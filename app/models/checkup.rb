@@ -1,5 +1,5 @@
 require 'httparty'
-require 'twilio-ruby'
+
 
 class Checkup < ActiveRecord::Base
   belongs_to :user
