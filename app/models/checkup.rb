@@ -1,6 +1,5 @@
 require 'httparty'
 
-
 class Checkup < ActiveRecord::Base
   belongs_to :user
 

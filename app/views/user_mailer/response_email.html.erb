@@ -4,8 +4,12 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to example.com, <%= @user.name %></h1>
-    
-    <p>Thanks for joining and have a great day!</p>
+    <h1>Hello from Doctor Zorders, <%= @user.name %>.</h1>
+    <br>
+    <p>You have successfully signed up for personalized health care recommendations.<br>Your username is: <%= @user.name %>.<br>
+    </p>
+    <p>Just before your visit to the doctor, remember to follow this link: <%= @url %> for your recommendations.</p>
+    <br>
+    <p>Here's to a healthier you, <%= @user.name %>!</p>
   </body>
 </html>
