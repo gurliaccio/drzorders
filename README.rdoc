@@ -1,11 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello, and thanks for stopping by.
+
+Have you ever left your doctor's office remembering too late something you wanted to discuss? 
+Or felt like your doctor was rushed? 
+Or you were underinformed?
+
+The interaction of busy doctors and unprepared patients often results in less than ideal office visits. Doctor Zorders is an app designed to 
+put relevant and reputable health care information in the hands of everyone with an email address. The doctor will even
+send you an email reminder of your recommendations, so you won't forget to discuss them with your doctor.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 4.2.0
 
 * System dependencies
 
