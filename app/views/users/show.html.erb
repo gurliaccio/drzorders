@@ -1,6 +1,8 @@
 <% provide(:title, @user.name) %>
 <div class="container-fluid">
-  <p class="animated zoomIn">Hello <%= @user.name %>, YIKES! It looks like you got here just in time. Just kidding, you look great.<br><i>Trust me</i>, I'm a doctor. Speaking of which, let's get healthy shall we?<br>Just enter your info below, and I'll make some suggestions.<br>If you want, I'll even remind you later via email.</p>
+  <br><br>
+  <p>Hello <%= @user.name %>!</p>
+  <p>Just enter your info below, and I'll make some suggestions.</p>
   <br>
   <form class="navbar-form" role="search" action="/checkups">
     <div class="radio">
