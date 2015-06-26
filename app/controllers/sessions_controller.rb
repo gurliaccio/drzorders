@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       sign_in user
       redirect_to user_path user
     else
-      flash.now[:danger] = "Invalid email/password combination"
+      flash.now[:danger] = "Nope. Bad combination"
       render 'new'
     end
   end
