@@ -9,11 +9,11 @@ class Checkup < ActiveRecord::Base
     response = HTTParty.get "http://healthfinder.gov/developer/MyHFSearch.json?api_key=mslutnhngydkcsip&who=me&age=#{age}&gender=#{gender}"
     puts "Search result: #{response.body}"    
     checkups_hash = JSON.parse(response.body)
-    checkups_hash["Result"]["Title"].map do |topic|
+    checkups_hash["Result"]["Topics"].map do |topic|
       Checkup.new(
         {
-          title: topic["Title"],
-          # description: topic["MyHFDescription"],
+          # title: topic["Title"],
+          description: topic["MyHFDescription"],
           user: current_user
         }
       )

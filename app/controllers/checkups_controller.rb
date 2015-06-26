@@ -9,9 +9,9 @@ class CheckupsController < ApplicationController
     @checkups = Checkup.search(current_user, @gender, @age)
 
     # delete old checkup data for current_user
-    current_user.checkups.each do |checkup|
-      checkup.destroy
-    end
+    # current_user.checkups.each do |checkup|
+    #   checkup.destroy
+    # end
 
     # save new checkup data for current_user
     @checkups.each do |checkup|

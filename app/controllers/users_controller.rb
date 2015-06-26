@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      UserMailer.response_email(@user).deliver_now
+      # UserMailer.response_email(@user).deliver_now
       sign_in @user
       flash[:success] = "Hi!!"
       redirect_to user_path @user 
