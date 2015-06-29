@@ -14,63 +14,18 @@
  *= require_self
  */
 
-
-h1 {
- 
-}
-
-h2 {
-  /*font-family: 'Glyphicons Halflings';*/
-  /*padding-left: 150px;
-  padding-right: 150px;*/
-}
-
-h3 {
-  /*font-family: 'Glyphicons Halflings';*/
- /* padding-left: 150px;
-  padding-right: 150px;*/
-}
-
-h4 {
-  /*font-family: 'Glyphicons Halflings';*/
- /* padding-left: 150px;
-  padding-right: 150px;*/
-}
-
-h5 {
-  color: #3399FF;
-}
-
-h6 {
-  color: blue;
-  /*padding-left: 150px;
-  padding-right: 150px;*/
-}
-
 p { 
  font-family: 'Raleway', sans-serif;
  font-size: 1em; 
- /*padding-left: 150px;
- padding-right: 150px;*/
 }
 
-.form-group {
-  /*padding-left: 40px;*/
+h2 { 
+ font-family: 'Raleway', sans-serif;
+ font-size: 1em; 
 }
 
-.navbar-form {
-  /*padding-left: 300px;*/
+.jumbotron {
+  background: transparent;
 }
-
-.logo {
-    /*margin-left: auto;
-    margin-right: auto;
-    width: 70%;*/
-    /*display: block;
-    margin-left: auto;
-    margin-right: auto }*/
-}
-
-
 
 
