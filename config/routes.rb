@@ -14,8 +14,6 @@ Rails.application.routes.draw do
   resources :users,     except: [:new]
   resources :sessions,  only:   [:create]
 
-  # get '/index',     to: 'items#index'
-  get '/',             to: 'static_pages#index'
   get '/signup',       to: 'users#new'
   get '/signin',       to: 'sessions#new'
   delete '/signout',   to: 'sessions#destroy'
