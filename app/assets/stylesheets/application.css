@@ -14,18 +14,7 @@
  *= require_self
  */
 
-p { 
- font-family: 'Raleway', sans-serif;
- font-size: 1em; 
-}
+ 
 
-h2 { 
- font-family: 'Raleway', sans-serif;
- font-size: 1em; 
-}
-
-.jumbotron {
-  background: transparent;
-}
 
 

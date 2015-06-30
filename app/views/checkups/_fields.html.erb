@@ -1,13 +1,17 @@
-<%= form_for(@item) do |f| %>
-  <%= render 'shared/error_messages', object: f.object %>
+<div class="container-fluid>"
+  <div class="jumbotron text-center animated bounceIn" id="title" style="background:white;width:75%;display:block;margin:auto;">
+    <%= form_for(@item) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name, autofocus: true %>
+      <%= f.label :name %>
+      <%= f.text_field :name, autofocus: true %>
 
-  <br>
-  <%= f.label :price %>
-  <%= f.text_field :price %>
+      <br>
+      <%= f.label :price %>
+      <%= f.text_field :price %>
 
-  <br>
-  <%= f.submit 'Save' %>
-<% end %>
+      <br>
+      <%= f.submit 'Save' %>
+    <% end %>
+  </div>
+</div>

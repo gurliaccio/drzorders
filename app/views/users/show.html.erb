@@ -1,11 +1,7 @@
 <% provide(:title, @user.name) %>
 <div class="jumbotron text-center animated bounceIn" id="title" style="background:white;width:75%;display:block;margin:auto;">
-  <h2>Hello <%= @user.name %>, welcome to my office.</h2>
-  <h2>I have two questions for you:</h3>
-  <br>
-  <h3>Are you a Mr. T or a Wonder Woman?</h3>
-  <h3>How old are you?</h3>
-  
+  <h1>Hello <span style="color:red"><%= @user.name %></span>, welcome to my office.</h1>
+  <h3>Please fill in your info below:</h3>
   <br>
   <form class="navbar-form" role="search" action="/checkups">
     <div class="radio">
@@ -14,9 +10,9 @@
     <div class="radio">
       <label><input type="radio" name="gender" value="female">female</label>
     </div>
+    <br>
     <div class="form-group"><input type="integer" name="age" value="<%= @age %>" class="form-control" placeholder="age">
       <button type="submit" class="btn btn-primary hvr-grow" onclick="window.location.href='/index'">submit</button>
-      <!-- <button type="reset"  class="btn btn-info hvr-grow" onclick="window.location.href='/'">reset</button> -->
     </div>
   </form>
 </div>  

@@ -1,15 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=Raleway:400,700");
-/*!
- * bootswatch v3.3.2
- * Homepage: http://bootswatch.com
- * Copyright 2012-2015 Thomas Park
- * Licensed under MIT
- * Based on Bootstrap
-*/
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 html {
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -17,8 +9,8 @@ html {
 body {
   margin: 0;
   padding-top: 5px;
-  background-image: url("http://www.clker.com/cliparts/N/j/U/w/j/G/red-outline-caduceus.svg");
-  background-size: 15%;
+  background-image: url("/images/caduceus.svg");
+  background-size: 10%;
   background-repeat:repeat;
   background-attachment: fixed;
 }
@@ -1082,7 +1074,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: font-family: 'Raleway', sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -1097,13 +1089,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #ec0e0e;
+  color: white;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #f00202;
-  text-decoration: underline;
+  color: red;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -4395,7 +4387,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #ff0004;
+  color: black;
 }
 .navbar-default .navbar-text {
   color: #ffffff;

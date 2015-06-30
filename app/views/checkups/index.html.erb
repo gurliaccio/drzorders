@@ -1,6 +1,7 @@
-<% provide(:title, 'Items Index') %>
+<% provide(:title, 'My Advice') %>
+<div class="container-fluid>"
 <div class="jumbotron text-center animated bounceIn" id="title" style="background:white;width:75%;display:block;margin:auto;">
-<h5 class="animated fadeIn">The doctor is now seeing <%= current_user %></h5>
+<h5 class="animated fadeIn">The doctor is now seeing <span style="color:red"><%= current_user %></span></h5>
 
 <h3>I recommend:<br><br></h3>
 
@@ -9,5 +10,7 @@
   <p><%= checkup.description %></p>
 <% end %>
 
-<h6><br>Recommendations come from the U.S. Preventive Services Task Force (USPSTF), the CDC Advisory Committee on Immunization Practices (ACIP), the Bright Futures Guidelines, and the Institute of Medicine’s (IOM) Committee on Preventive Services for Women. All are created by the Office of Disease Prevention and Health Promotion (ODPHP) in collaboration with the Agency for Healthcare Research and Quality (AHRQ).</h6>
+<br>
+<h6>Recommendations come from the U.S. Preventive Services Task Force (USPSTF), the CDC Advisory Committee on Immunization Practices (ACIP), the Bright Futures Guidelines, and the Institute of Medicine’s (IOM) Committee on Preventive Services for Women. All are created by the Office of Disease Prevention and Health Promotion (ODPHP) in collaboration with the Agency for Healthcare Research and Quality (AHRQ).</h6>
+</div>
 </div>
