@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       sign_in user
       redirect_to user_path user
     else
-      flash.now[:danger] = "I think you're mistaken."
+      flash.now[:warning] = "I think you're mistaken. Please try again."
       render 'new'
     end
   end
