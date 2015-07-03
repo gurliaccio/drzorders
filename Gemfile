@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -8,6 +9,9 @@ gem 'pg'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'rails_log_stdout',           github: 'Heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'Heroku/rails3_serve_static_assets'
+gem 'gem_bench', :group => :console
 gem 'httparty'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -17,19 +21,17 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'actionmailer'
-gem 'sdoc', '~> 0.4.0', group: :doc
-
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'puma'
 
-gem 'rails_12factor', group: :production
 
 group :production do
+  gem 'rails_12factor'
   gem "unicorn"
 end
 
-ruby '2.1.2'
-gem 'puma'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
