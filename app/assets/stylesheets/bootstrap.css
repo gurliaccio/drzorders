@@ -1,5 +1,10 @@
 @import url("//fonts.googleapis.com/css?family=Raleway:400,700");
 
+
+#title {
+  background-color: rgba(255,255,255, 0.7);
+}
+
 html {
   font-family: 'Raleway', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -9,9 +14,9 @@ html {
 body {
   margin: 0;
   padding-top: 5px;
-  background-image: url("/images/caduceus.svg");
-  background-size: 10%;
-  background-repeat:repeat;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
   background-attachment: fixed;
 }
 
@@ -3078,7 +3083,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
   color: red;
   background-color: white;
-  border-color: grey;
+  /*border-color: grey;*/
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3856,6 +3861,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
+
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -3873,7 +3879,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: red;
 }
 .nav > li.disabled > a {
   color: #b3b3b3;
@@ -4054,7 +4060,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 65px;
   margin-bottom: 22px;
-  border: 1px solid transparent;
+  /*border: 1px solid transparent;*/
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4159,8 +4165,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   border-width: 1px 0 0;
 }
+
 .navbar-brand {
   float: left;
+  color:white;
   padding: 21.5px 15px;
   font-size: 20px;
   line-height: 22px;
@@ -4168,6 +4176,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 4px;
   text-decoration: none;
 }
 .navbar-brand > img {
@@ -4215,6 +4225,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 22px;
+
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4381,27 +4392,27 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f91801;
-  border-color: #ffffff;
+  background-color: 255, 255, 255, 0.4;
+  border-color: white;
 }
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #white;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: black;
 }
 .navbar-default .navbar-text {
-  color: #ffffff;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ff0004;
+  color: black;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #ff0004;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #ff0004;
@@ -4782,6 +4793,8 @@ a.label:focus {
   top: 0;
   padding: 1px 5px;
 }
+
+
 a.badge:hover,
 a.badge:focus {
   color: #ffffff;
@@ -6542,11 +6555,11 @@ button.close {
   border-radius: 4px;
 }
 .navbar-nav > li > a:hover {
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
 }
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover {
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
 }
 .navbar-default .navbar-nav > .active > a:hover {
   color: #4582ec;
@@ -6638,5 +6651,8 @@ legend {
   color: #333333;
 }
 .navbar-brand {
-  color: #ec0e0e;
+  color: #ffffff;
+}
+a.navbar-brand:hover {
+  color: black;
 }
